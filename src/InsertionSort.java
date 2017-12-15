@@ -27,10 +27,11 @@ public final class InsertionSort {
 		if(list.get(sortedUpperBound) > ele){
 			if(sortedUpperBound-1 >= 0){
 				System.out.println("entered at : " + sortedUpperBound);
+				insertIndex = sortedUpperBound-1;
 				searchForInsertIndex(sortedUpperBound-1, ele, list);
 			}
 		}
-		System.out.println(insertIndex + ": ");
+		
 		return insertIndex;
 	}
 	
